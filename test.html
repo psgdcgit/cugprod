@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Conversion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+         .text-indent {
+            text-indent: 0pt;
+            text-align: left;
+        }
+        .padding-left-5 {
+            padding-left: 5pt;
+        }
+        .padding-left-86 {
+            padding-left: 86pt;
+        }
+        .padding-left-210 {
+            padding-left: 210pt;
+        }
+        .padding-top-3 {
+            padding-top: 3pt;
+        }
+        .padding-top-9 {
+            padding-top: 9pt;
+        }
+        .line-height-13 {
+            line-height: 13pt;
+        }
+        h1 {
+            text-align: left;
+            margin: 0;
+        }
+        p {
+            margin: 0;
+        }
+        table {
+            border: 0;
+            cellspacing: 0;
+            cellpadding: 0;
+        }
+        img {
+            width: 85px;
+            height: 46px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: left;
+        }
+        .center {
+            text-align: center;
+        }
+        .text-indent {
+            text-indent: 0pt;
+            text-align: left;
+        }
+        .padding-left {
+            padding-left: 5pt;
+        }
+        .instructions {
+            padding-left: 12pt;
+            text-indent: -6pt;
+            text-align: left;
+        }
+        h2 {
+            padding-left: 5pt;
+            text-indent: 0pt;
+            text-align: left;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p class="text-indent">
+        <span>
+            <table>
+                <tr>
+                    <td>
+                        <!-- <img src="data:image/jpg;base64,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" alt="Logo"> -->
+                    </td>
+                </tr>
+            </table>
+        </span>
+    </p>
+    <p class="s1 padding-top-3 padding-left-86 text-indent line-height-13">PSG Institutions</p>
+    <p class="s2 padding-left-86 text-indent">Coimbatore</p>
+    <p class="text-indent padding-top-9"></p>
+    <h1 class="padding-left-210 text-indent">CUG SIM KYC DOCUMENT</h1>
+    <p class="text-indent"></p>
+    <table>
+        <tr>
+            <td>CUG Mobile No</td>
+            <td></td>
+            <td>20 Digit SIM No</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>Institution name</td>
+            <td colspan="2"></td>
+            <td>Employee No</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Name of the user</td>
+            <td colspan="2"></td>
+            <td>Personal Mobile No</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Official Email ID</td>
+            <td></td>
+            <td></td>
+            <td>User Aadhar No</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Issued with handset</td>
+            <td class="center">
+                <input type="radio" id="yes" name="handset" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="handset" value="No">
+                <label for="no">No</label>
+            </td>
+            <td>SIM type</td>
+            <td colspan="2" class="center">
+                <input type="radio" id="physical" name="sim_type" value="Physical SIM">
+                <label for="physical">Physical SIM</label>
+                <input type="radio" id="esim" name="sim_type" value="eSIM">
+                <label for="esim">eSIM</label>
+            </td>
+        </tr>
+        <tr>
+            <td>SIM Received Date</td>
+            <td></td>
+            <td>SIM Issued by</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>SIM Used in</td>
+            <td colspan="2">
+                <input type="radio" id="slot1" name="sim_used" value="Slot 1">
+                <label for="slot1">Slot 1</label>
+                <input type="radio" id="slot2" name="sim_used" value="Slot 2">
+                <label for="slot2">Slot 2</label>
+            </td>
+            <td>Using Mobile data</td>
+            <td>
+                <input type="radio" id="data_yes" name="mobile_data" value="Yes">
+                <label for="data_yes">Yes</label>
+                <input type="radio" id="data_no" name="mobile_data" value="No">
+                <label for="data_no">No</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Device type</td>
+            <td colspan="2">
+                <input type="radio" id="smartphone" name="device_type" value="Smartphone">
+                <label for="smartphone">Smartphone</label>
+                <input type="radio" id="button" name="device_type" value="Button type">
+                <label for="button">Button type</label>
+                <input type="radio" id="tablet" name="device_type" value="Tablet / iPad Data card">
+                <label for="tablet">Tablet / iPad Data card</label>
+            </td>
+            <td>Others</td>
+        </tr>
+        <!-- Add additional rows as needed -->
+    </table>
+    <p class="text-indent"></p>
+    <p class="padding-left text-indent">
+        User Sign Head of the Dept. Head of the Institution
+    </p>
+    <p class="text-indent"></p>
+    <h2 class="padding-left text-indent">Instructions</h2>
+    <ul>
+        <li class="instructions">
+            CUG numbers should not be used for any kind of personal calls / personal purposes.
+        </li>
+        <li class="instructions">
+            KYC must be validated once in six months, through online mode (https://cug.psginstitutions.in)
+        </li>
+        <li class="instructions">
+            SIM should be surrendered during cessation of the service.
+        </li>
+        <li class="instructions">
+            SIM user must be available 24/7 to attend the calls.
+        </li>
+    </ul>
+</body>
+</html>
